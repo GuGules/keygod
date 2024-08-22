@@ -1,0 +1,124 @@
+body{
+    background-color: #FEFFFB;
+}
+
+.logo-sidebar {
+  max-width: 3em;
+}
+
+#button-box {
+  padding-bottom: 1em;
+}
+
+.form-input {
+  border: 0px;
+  border-bottom: 2px solid gray !important;
+}
+
+.form-input:focus {
+  border: 0px;
+  border-bottom: 2px solid #149CEA !important;
+  transition: 0.10s;
+}
+
+#login-box{
+    margin-top:15rem;
+    background-color: white;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.button-um{
+  background-color: #149CEA;
+  border: 0px #FEFFFB;
+  border-radius:12px;
+  color:white;
+  width: 100%;
+}
+
+.button-um:hover{
+  background-color: white;
+  transition:0.20s;
+  border: solid 2px #149CEA !important;
+  color:#149CEA;
+}
+
+.form{
+  margin-top: 1em;
+  margin-bottom:2em;
+}
+
+.button-icon {
+  margin-right:0.5em;
+}
+
+.log-input{
+  border-radius:10px;
+}
+
+.log-input:focus{
+  border-color :#1479EA;
+}
+
+.button-ekil0 {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+.button-ekil0::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    transition: 0.5s;
+    background-color: white;
+    transform-origin: center;
+  }
+  
+.button-ekil0::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: white;
+    transition: 0.5s;
+  }
+  
+.button-ekil0:hover::before, .button-ekil0:hover::after {
+    transform: scale(0)
+  }
+  
+.button-ekil0:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+
+
+/* personnal style */
+
+
+.box {
+  margin-top: 2em;
+  padding-top:2em;
+  background-color : #FFFFFF;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
