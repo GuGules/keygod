@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
 body{
     background-color: #FEFFFB;
 }
+
+.profile-text {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .logo-sidebar {
   max-width: 3em;
@@ -122,3 +131,9 @@ body{
 
 }
 
+/* Checkbox Style */
+
+input[type="checkbox"]{
+  border: 10px solid;
+  border-radius: 25px;
+}
