@@ -3,14 +3,6 @@ ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 include('include/lib_pw.php');
 
-if (isset($_POST['submit'])){
-    $success_state = new_password($bdd,$password,$_SESSION['user_id'],$entry_name,$url,CRYPT_KEY);
-    
-}
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -24,6 +16,16 @@ if (isset($_POST['submit'])){
 </head>
 
 <body>
+<?php
+    if (isset($_POST['submit'])){
+        $success_state = new_password($bdd,$_POST['password'],$_SESSION['user_id'],$_POST['entry_name'],$_POST['url'],CRYPT_KEY);
+    if ($success_state){
+        header('Location: index.php?success=1');
+    } else {
+        header('Location: index.php?fail=1');
+    }
+}?>
+
     <div class="container-fluid">
         <div class="row">
             <?php include('include/navbar.php') ?>

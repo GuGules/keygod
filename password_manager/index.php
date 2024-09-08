@@ -16,7 +16,8 @@ error_reporting(E_ALL);
 <body>
     <div class="container-fluid">
         <div class="row">
-            <?php include('include/navbar.php') ?>
+            <?php include('include/navbar.php');
+            include('include/lib_pw.php') ?>
             <div class="col-sm p-3 min-vh-100 container">
                 <div class="container-fluid">
                     <div class="row">
@@ -25,6 +26,8 @@ error_reporting(E_ALL);
                     <div class="row">
                     <div class="container col-10 offset-1 box">
                         <h1>Mes mots de passe</h1><br>
+                        <?php $userGroups = getUserGroups($bdd,$_SESSION['user_id']);
+                        var_dump($userGroups); ?>
                     </div>
                 </div>
             </div>
