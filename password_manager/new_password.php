@@ -4,7 +4,8 @@ error_reporting(E_ALL);
 include('include/lib_pw.php');
 
 if (isset($_POST['submit'])){
-    //new_password()
+    $success_state = new_password($bdd,$password,$_SESSION['user_id'],$entry_name,$url,CRYPT_KEY);
+    
 }
 
 

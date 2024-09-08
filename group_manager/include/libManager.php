@@ -9,5 +9,5 @@ function getGroups($bdd){
 function newGroup($bdd, $group_name){
     $req='INSERT INTO GROUPS(GROUP_NAME) VALUES ("'.$group_name.'")';
     return $bdd->exec($req);
-    }
+    };
 ?>
