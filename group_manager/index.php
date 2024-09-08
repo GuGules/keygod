@@ -38,6 +38,9 @@ error_reporting(E_ALL);
                                         <td>
                                             Nom du groupe
                                         </td>
+                                        <td>
+                                            Manager du groupe
+                                        </td>
                                     </tr>
                                     <?php 
                                     $groups = getGroups($bdd);
@@ -45,6 +48,9 @@ error_reporting(E_ALL);
                                         <tr>
                                             <td>
                                                 <?php echo $group['GROUP_NAME']?>
+                                            </td>
+                                            <td>
+                                                <?php echo $group['MANAGER']?>
                                             </td>
                                         </tr>
 

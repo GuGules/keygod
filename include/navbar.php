@@ -10,7 +10,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-black py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                <a href="password_manager" class="nav-link text-black py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
                     <i class="bi-key fs-1"></i>
                 </a>
             </li>

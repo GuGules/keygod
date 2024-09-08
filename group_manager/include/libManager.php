@@ -1,7 +1,7 @@
 <?php
 
 function getGroups($bdd){
-    $req = "SELECT * FROM GROUPS LIMIT 10";
+    $req = "SELECT *,USERS.USERNAME AS MANAGER FROM GROUPS JOIN USERS ON GROUPS.GROUP_MANAGER = USERS.ID";
     $res = $bdd->query($req)->fetchAll();
     return $res;
 }

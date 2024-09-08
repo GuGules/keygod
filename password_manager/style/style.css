@@ -1,0 +1,30 @@
+.logo-sidebar {
+    max-width: 3em;
+  }
+
+/* personnal style */
+
+
+.box {
+  margin-top: 2em;
+  padding-top:2em;
+  padding-bottom:2em;
+  background-color : #FFFFFF;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button-um{
+  background-color: #149CEA;
+  border: 0px #FEFFFB;
+  border-radius:12px;
+  color:white;
+  width: 100%;
+}
+
+.button-um:hover{
+  background-color: white;
+  transition:0.20s;
+  border: solid 2px #149CEA !important;
+  color:#149CEA;
+}

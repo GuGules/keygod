@@ -6,4 +6,7 @@
     include('db_lib.php');
     $bdd = seConnecter();
     session_start();
+
+    define("CRYPT_KEY","fb13ed65f8389ea5fab9a5c4f2985f1c");
+
 ?>

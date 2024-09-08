@@ -29,7 +29,7 @@ error_reporting(E_ALL);
                     <div class="row">
                         <div class="col-4 offset-1">
                             <div class="row">
-                                <p><b>Nom :</b> <?php echo $userData["NOM"]?></p>
+                                <p><b>Nom :</b> <?php echo $userData["LAST_NAME"]?></p>
                             </div><br>
                             <div class="row">
                                 <p><b>Adresse Email : </b> <?php echo $userData["EMAIL_ADDRESS"]?></p>
@@ -37,7 +37,7 @@ error_reporting(E_ALL);
                         </div>
                         <div class="col-4 offset-1">
                             <div class="row">
-                                <p><b>Prénom : </b><?php echo $userData["PRENOM"]?></p>
+                                <p><b>Prénom : </b><?php echo $userData["FIRST_NAME"]?></p>
                             </div><br>
                         </div>
                     </div>
@@ -49,16 +49,11 @@ error_reporting(E_ALL);
                             <table class="table">
                                 <?php foreach ($groups as $group){?>
                                     <tr>
-                                        <td><input type="checkbox" <?php if (in_array($group['GROUP_NAME'],$_SESSION['groups'])){echo 'value="1"';}?>><?php echo " ". $group['GROUP_NAME']?></td>
+                                        <td><input type="checkbox" <?php if (in_array($_SESSION['user_id'],unserialize($group['MEMBERS']))){echo 'value="1"';}?>><?php echo " ". $group['GROUP_NAME']?></td>
                                     </tr>
                                 <?php } ?>
                             </table>
                         </div>
-                        <?php echo var_dump($_SESSION['groups']);
-                        if (in_array("admin",$_SESSION['groups'])){
-                            echo True;
-                        };
-                        ?>
                     </div>
                 </div>
             </div>

@@ -29,11 +29,10 @@ function login($bdd,$username,$passwd){
 function getUser($bdd,$username){
     $req = "select * from USERS where USERNAME = '".$username."'";
     $res = $bdd ->query($req)->fetch();
-    $groups = unserialize($res['GROUPS']);
-    var_dump($res['NOM'],$res['PRENOM'],$res['USERNAME'],$groups,$res['ADMIN_MODE']);
+    $_SESSION['user_id']= $res['ID'];
     $_SESSION['nom'] = $res['NOM'];
     $_SESSION['prenom'] = $res['PRENOM'];
     $_SESSION['username'] = $res['USERNAME'];
-    $_SESSION['groups'] = $groups;
     $_SESSION['admin_mode'] = $res['ADMIN_MODE'];
 }
+
